@@ -28,7 +28,7 @@ def main():
 	enabled = [None] * 100
 	disabled = [None] * 100
 	for line in file:
-		if (line[0] == "#"):
+		if (line[0] == ";"):
 			disabled[i] = line
 			i=i+1
 		else:
