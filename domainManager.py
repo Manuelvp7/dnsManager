@@ -25,8 +25,8 @@ def main():
 	# file = open("../doc",'r+')
 	i = 0
 	j = 0
-	enabled = [None] * 10
-	disabled = [None] * 10
+	enabled = [None] * 100
+	disabled = [None] * 100
 	for line in file:
 		if (line[0] == "#"):
 			disabled[i] = line
