@@ -21,7 +21,8 @@ def inhabilitar(path,pattern,subst):
 	move(abs_path,path)
 
 def main():
-	file = open("../forward.equipo5.com",'r+');
+	file = open("../forward.equipo5.com",'r+')
+	# file = open("../doc",'r+')
 	i = 0
 	j = 0
 	enabled = [None] * 10
