@@ -21,7 +21,7 @@ def inhabilitar(path,pattern,subst):
 	move(abs_path,path)
 
 def main():
-	file = open("doc",'r+');
+	file = open("../doc",'r+');
 	i = 0
 	j = 0
 	enabled = [None] * 10
@@ -29,10 +29,10 @@ def main():
 	for line in file:
 		if (line[0] == "#"):
 			disabled[i] = line
-			i=+1
+			i=i+1
 		else:
 			enabled[j] = line
-			j=+1
+			j=j+1
 
 	print("HABILITADOS \n")
 	for enable in enabled:
@@ -43,7 +43,7 @@ def main():
 		if disable != None:
 			print(disable)		
 	
-	inhabilitar(" ~/home/manuel/Documents/doc",enabled[0],"#")
+	# inhabilitar(" ~/home/manuel/Documents/doc",enabled[0],"#")
 
 
 	# bashCommand = "sudo reboot"
