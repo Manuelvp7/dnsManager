@@ -73,8 +73,10 @@ def main():
 				x=x+2
 			print("")
 			optionDisable = input("\n\n INGRESE EL DOMINIO QUE DESEA DESHABILITAR: \n") 
-			inhabilitarDeshabilitar("../doc",enabledArray[int(optionDisable,10)],";","deshabilitar")
-			inhabilitarDeshabilitar("../doc",enabledArray[int(optionDisable,10)+1],";","deshabilitar")
+			inhabilitarDeshabilitar("../reverse.equipo5.com",";"+disabledArray[int(optionDisable,10)],disabledArray[int(optionDisable,10)],"habilitar")
+			inhabilitarDeshabilitar("../reverse.equipo5.com",";"+disabledArray[int(optionDisable,10)+1],disabledArray[int(optionDisable,10)+1],"habilitar")
+			inhabilitarDeshabilitar("../forward.equipo5.com",";"+disabledArray[int(optionDisable,10)],disabledArray[int(optionDisable,10)],"habilitar")
+			inhabilitarDeshabilitar("../forward.equipo5.com",";"+disabledArray[int(optionDisable,10)+1],disabledArray[int(optionDisable,10)+1],"habilitar")			
 			inhabilitarDeshabilitar("references",enabledArray[int(optionDisable,10)],"#","deshabilitar")
 			inhabilitarDeshabilitar("references",enabledArray[int(optionDisable,10)+1],"#","deshabilitar")
 
